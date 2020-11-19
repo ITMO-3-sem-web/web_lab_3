@@ -1,0 +1,19 @@
+.message-box {
+    background-color: rgba(255, 77, 140, .6);
+    border: solid rgb(255, 77, 140);
+    border-radius: 5px;
+    width: 500px;
+    margin: 30px 30px ;
+    text-align: left;
+}
+
+.message-box-content {
+    word-wrap: break-word;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.link {
+    margin: 10px 32px;
+}

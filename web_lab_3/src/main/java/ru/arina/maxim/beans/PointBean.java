@@ -4,21 +4,37 @@ import ru.arina.maxim.model.Point;
 
 import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
+import javax.faces.event.ValueChangeEvent;
 import java.io.Serializable;
+import java.util.Arrays;
 import java.util.List;
 
 
-//@ManagedBean(name = "pointBean")
+@ManagedBean(name = "pointBean")
 @ApplicationScoped
 public class PointBean implements Serializable {
 
-    private double x;
+    private int x;
 
     private double y;
 
     private boolean[] r = new boolean[5];
 
     private List<Point> allPoints;
+
+    public void handleClearTable() {
+        System.out.println("************************************");
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        System.out.println("r = " + Arrays.asList(r));
+    }
+
+    public void handleSubmitForm() {
+        System.out.println("************************************");
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        System.out.println("r = " + Arrays.toString(r));
+    }
 
 //    @ManagedProperty("#{dao}")
 //    private DBManager dbManager;
@@ -40,6 +56,9 @@ public class PointBean implements Serializable {
 //
 //    }
 
+    public void printX(ValueChangeEvent e) { // todo Delete this later
+        System.out.println(x);
+    }
 
     private double xx, yy, rr;
 
@@ -93,11 +112,11 @@ public class PointBean implements Serializable {
         return ans;
     }
 
-    public double getX() {
+    public int getX() {
         return x;
     }
 
-    public void setX(double x) {
+    public void setX(int x) {
         this.x = x;
     }
 

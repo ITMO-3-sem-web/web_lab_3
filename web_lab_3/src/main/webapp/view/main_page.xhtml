@@ -4,18 +4,90 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
-      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:ace="http://www.icefaces.org/icefaces/components"
       xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
 
 
 <h:head>
-
+    <title>web_lab_3</title>
+    <h:outputStylesheet library="css" name="style.css"/>
 </h:head>
 
 <h:body>
 
-    <ace:sliderEntry/>
+    <ui:include src="header.xhtml"/>
+
+    <h:form id="form">
+
+        <h:panelGroup styleClass="content">
+
+            <h:panelGroup styleClass="choose-values x">
+                <h:outputLabel styleClass="line-title" value="Значение X:" />
+
+                    <ace:sliderEntry id="x-input" valueChangeListener="#{pointBean.printX}" value="#{pointBean.x}" styleClass="checkbox-values x" min="-4" max="4" stepPercent="12.5" length="170px" clickableRail="true" showLabels="true">
+                        <ace:ajax event="slideEnd" execute="@this" render="@form"/>
+                    </ace:sliderEntry>
+
+            </h:panelGroup>
+
+            <h:outputText styleClass="slider-value" value="#{pointBean.x}"/>
+
+
+            <h:panelGroup styleClass="choose-values">
+                <h:outputLabel styleClass="line-title" value="Значение Y:" />
+
+                <h:inputText id="y-input" styleClass="checkbox-values y-input" converterMessage="Введите число в указанном диапазоне." required="true"  requiredMessage="Обязательно введите значение Y" maxlength="6" type="" value="#{pointBean.y}"/>
+            </h:panelGroup>
+
+            <h:panelGroup styleClass="choose-values">
+
+                <h:outputLabel styleClass="line-title" value="Значение R:" />
+
+                <h:panelGroup styleClass="checkbox-values r">
+                    <h:selectBooleanCheckbox id="r1" styleClass="" value="#{pointBean.r[0]}"/>
+                    <h:outputLabel for="r1" value="1"/>
+
+                    <h:selectBooleanCheckbox id="r2" styleClass="" value="#{pointBean.r[1]}"/>
+                    <h:outputLabel for="r2" value="2"/>
+
+                    <h:selectBooleanCheckbox id="r3" styleClass="" value="#{pointBean.r[2]}"/>
+                    <h:outputLabel for="r3" value="3"/>
+
+                    <h:selectBooleanCheckbox id="r4" styleClass="" value="#{pointBean.r[3]}"/>
+                    <h:outputLabel for="r4" value="4"/>
+
+                    <h:selectBooleanCheckbox id="r5" styleClass="" value="#{pointBean.r[4]}"/>
+                    <h:outputLabel for="r5" value="5"/>
+                </h:panelGroup>
+            </h:panelGroup>
+
+            <h:panelGroup>
+                    <h:commandButton styleClass="" value="Submit"
+                                     type="submit"
+                                     action="#{pointBean.handleSubmitForm}">
+                    </h:commandButton>
+
+                    <h:commandButton styleClass=""
+                                     value="Clear form"
+                                     type="button"/>
+
+                <h:commandButton styleClass=""
+                                 value="Clear table"
+                                 type="button"
+                                 action="#{pointBean.handleClearTable}">
+                    <f:ajax render="results-table"/>
+                </h:commandButton>
+            </h:panelGroup>
+
+        </h:panelGroup>
+
+
+
+
+    </h:form>
+
+    <ui:include src="footer.xhtml"/>
 
 </h:body>
 </html>
