@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="web_lab_3:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c3507a5f-3f3b-4f3f-8486-2c1e7a054f29" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/arina/maxim/beans/PointBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/arina/maxim/model/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/footer.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/welcome_page.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab3/beans/DateBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab3/beans/PointBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab3/beans/PointsBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab3/converters/XConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab3/model/Point.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab3/model/PointDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab3/model/PointDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab3/validators/XValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/main_page.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/start_page.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/areas.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/itmo_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/vt_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/sliderValueUpdating.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/updateDate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/visualization.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/header.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/header.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/index.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/main_page.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/main_page.xhtml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="jsf" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\programs\IntelliJ IDEA 2020.2.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kVU3JbMHg6p3giwJOnIjRRk0If" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="oracle" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.4816092" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.arina.maxim.services" />
+      <recent name="ru.arina.maxim.model" />
+      <recent name="ru.arina.maxim.beans" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JBoss 21.0.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 21.0.0.Final" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="web_lab_3:war">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="SERVER" />
+        <option name="BINDING_SET_NAME" value="" />
+        <option name="DOMAIN" value="false" />
+        <option name="SERVER_GROUP" value="main-server-group" />
+        <option name="USERNAME" value="" />
+        <option name="CREDENTIAL_ALIAS" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="JBoss" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53889" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="web_lab_3:war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c3507a5f-3f3b-4f3f-8486-2c1e7a054f29" name="Default Changelist" comment="" />
+      <created>1605785051508</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605785051508</updated>
+      <workItem from="1605785052767" duration="581000" />
+      <workItem from="1605785643351" duration="3317000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="924" y="402" key="#Assign_Data_Sources" timestamp="1605785188950">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="924" y="402" key="#Assign_Data_Sources/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605785188950" />
+    <state x="617" y="215" width="1089" height="879" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605786234386">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="617" y="215" width="1089" height="879" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605786234386" />
+    <state x="891" y="0" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1605785693946">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="891" y="0" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605785693946" />
+    <state x="553" y="378" width="941" height="356" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog" timestamp="1605786202049">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="553" y="378" width="941" height="356" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605786202049" />
+    <state width="1024" height="212" key="GridCell.Tab.0.bottom" timestamp="1605790736566">
+      <screen x="2560" y="0" width="1536" height="824" />
+    </state>
+    <state width="1382" height="299" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605787639658" />
+    <state width="1024" height="212" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.0.1536.824@2560.0.1536.824" timestamp="1605790736566" />
+    <state width="1024" height="212" key="GridCell.Tab.0.center" timestamp="1605790736566">
+      <screen x="2560" y="0" width="1536" height="824" />
+    </state>
+    <state width="1382" height="299" key="GridCell.Tab.0.center/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605787639658" />
+    <state width="1024" height="212" key="GridCell.Tab.0.center/0.0.2048.1112/2560.0.1536.824@2560.0.1536.824" timestamp="1605790736566" />
+    <state width="1024" height="212" key="GridCell.Tab.0.left" timestamp="1605790736565">
+      <screen x="2560" y="0" width="1536" height="824" />
+    </state>
+    <state width="1382" height="299" key="GridCell.Tab.0.left/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605787639658" />
+    <state width="1024" height="212" key="GridCell.Tab.0.left/0.0.2048.1112/2560.0.1536.824@2560.0.1536.824" timestamp="1605790736565" />
+    <state width="1024" height="212" key="GridCell.Tab.0.right" timestamp="1605790736566">
+      <screen x="2560" y="0" width="1536" height="824" />
+    </state>
+    <state width="1382" height="299" key="GridCell.Tab.0.right/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605787639658" />
+    <state width="1024" height="212" key="GridCell.Tab.0.right/0.0.2048.1112/2560.0.1536.824@2560.0.1536.824" timestamp="1605790736566" />
+    <state width="189" height="539" key="HiddenNamespacesPopup" timestamp="1605785216613">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="189" height="539" key="HiddenNamespacesPopup/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605785216613" />
+    <state x="2854" y="115" key="SettingsEditor" timestamp="1605791822421">
+      <screen x="2560" y="0" width="1536" height="824" />
+    </state>
+    <state x="505" y="131" key="SettingsEditor/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605787308318" />
+    <state x="2854" y="115" key="SettingsEditor/0.0.2048.1112/2560.0.1536.824@2560.0.1536.824" timestamp="1605791822421" />
+    <state width="246" height="198" key="ShowFilterAction_Filter_Popup" timestamp="1605792040824">
+      <screen x="2560" y="0" width="1536" height="824" />
+    </state>
+    <state width="246" height="198" key="ShowFilterAction_Filter_Popup/0.0.2048.1112/2560.0.1536.824@2560.0.1536.824" timestamp="1605792040824" />
+    <state x="1223" y="170" width="618" height="781" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1605785496806">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="1223" y="170" width="618" height="781" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605785496806" />
+    <state x="681" y="259" key="run.anything.popup" timestamp="1605785854730">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="681" y="259" key="run.anything.popup/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605785854730" />
+    <state x="3001" y="183" width="672" height="503" key="search.everywhere.popup" timestamp="1605792059776">
+      <screen x="2560" y="0" width="1536" height="824" />
+    </state>
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605789482990" />
+    <state x="3001" y="183" width="672" height="503" key="search.everywhere.popup/0.0.2048.1112/2560.0.1536.824@2560.0.1536.824" timestamp="1605792059776" />
+  </component>
+</project>
