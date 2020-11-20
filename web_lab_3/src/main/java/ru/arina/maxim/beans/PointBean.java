@@ -36,6 +36,8 @@ public class PointBean implements Serializable {
         System.out.println("r = " + Arrays.toString(r));
     }
 
+
+
 //    @ManagedProperty("#{dao}")
 //    private DBManager dbManager;
 

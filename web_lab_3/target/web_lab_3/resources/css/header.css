@@ -1,0 +1,21 @@
+header {
+    font-style: italic;
+    padding: 20px;
+    box-shadow: 4px 4px 10px cadetblue;
+    margin: 20px auto 50px;
+}
+
+.header-title {
+    font-size: 20px;
+    margin: 20px 20px;
+}
+
+.header-content {
+    text-align: left;
+    margin-left: 110px;
+}
+
+.line-title {
+    color: cadetblue;
+    font-weight: bold;
+}

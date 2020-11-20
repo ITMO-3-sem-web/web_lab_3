@@ -4,25 +4,6 @@ body {
     margin: 0 auto 0;
 }
 
-header {
-    font-style: italic;
-
-    padding: 20px;
-    box-shadow: 4px 4px 10px cadetblue;
-    margin: 20px auto 50px;
-}
-
-
-.header-title {
-    font-size: 20px;
-    margin: 20px 20px;
-}
-
-
-.header-content {
-    text-align: left;
-    margin-left: 110px;
-}
 
 
 .line-title {
@@ -32,7 +13,7 @@ header {
 
 
 .content {
-    text-align: left;
+    text-align: center;
     display: inline-block;
     margin-top: 25px;
 }
@@ -40,6 +21,7 @@ header {
 
 #canvass {
     box-shadow: 0 1px 4px cadetblue;
+    text-align: center;
 
 }
 
@@ -47,10 +29,9 @@ header {
 
 .coordinates-view {
     text-align: left;
-/*    padding-left: 300px;;*/
-/*    width: 100px;*/
-/*    margin: 0 auto 0;*/
-    padding-left: 480px;
+    margin-left: 280px;
+    margin-bottom: 26px;
+    width: 220px;
 }
 
 .choose-values {
@@ -75,11 +56,8 @@ header {
 
 }
 
-#y-input {
-    width: 180px;
-}
 
-.y-input {
+.y {
     width: 180px;
 }
 
@@ -126,11 +104,21 @@ header {
 
 }
 
+.inputs-block {
+    display: block;
+    text-align: left;
+    margin-left: 120px;
+}
 
-#submit-button {
-    margin-top: 20px;
-    height: 30px;
-    width: 13%;
+.buttons-block {
+    display: block;
+    margin-top: 26px;
+}
+
+.button {
+    margin-right: 16px;
+    height: 34px;
+    width: 180px;
     border-radius: 100px;
     color: white;
     font-weight: bold;
@@ -141,11 +129,15 @@ header {
 }
 
 
-#submit-button:hover {
+.button:hover {
     transform: scale(0.9);
     color: cadetblue;
     background-color: white;
     box-shadow: none;
+}
+
+.hidden-form {
+    display: none;
 }
 
 
@@ -190,30 +182,6 @@ table tr:nth-child(odd){
 }
 
 
-footer {
-    margin-top: 80px;
-    height: 80px;
-    background-color: cadetblue ;
-    border-radius: 50px 50px 0 0;
-}
 
-.footer-text, .github-link-img {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    padding-right: 10px;
-}
-
-.footer-text {
-    font-weight: bold;
-    font-family: "Monaco", monospace;
-    font-size: 20px;
-}
-
-.github-link-img:hover {
-  transform: scale(1.4);
-
-}
 
 

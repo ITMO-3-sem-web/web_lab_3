@@ -18,76 +18,103 @@
 
     <ui:include src="header.xhtml"/>
 
-    <h:form id="form">
+    <h:panelGroup styleClass="content">
 
-        <h:panelGroup styleClass="content">
+        <canvas id="canvass" width="340" height="340">
+            <p>Your browser doesn't support canvas.</p>
+        </canvas>
 
-            <h:panelGroup styleClass="choose-values x">
-                <h:outputLabel styleClass="line-title" value="Значение X:" />
+        <section class="coordinates-view">
+            <p>
+                X : <span class="x">?</span>
+                <br/>
+                Y : <span class="y">?</span>
+            </p>
 
-                    <ace:sliderEntry id="x-input" valueChangeListener="#{pointBean.printX}" value="#{pointBean.x}" styleClass="checkbox-values x" min="-4" max="4" stepPercent="12.5" length="170px" clickableRail="true" showLabels="true">
-                        <ace:ajax event="slideEnd" execute="@this" render="@form"/>
-                    </ace:sliderEntry>
-
-            </h:panelGroup>
-
-            <h:outputText styleClass="slider-value" value="#{pointBean.x}"/>
+        </section>
 
 
-            <h:panelGroup styleClass="choose-values">
-                <h:outputLabel styleClass="line-title" value="Значение Y:" />
+        <h:form id="form">
+            <h:panelGroup styleClass="inputs-block">
+                <h:panelGroup styleClass="choose-values x">
+                    <h:outputLabel styleClass="line-title" value="Значение X:" />
 
-                <h:inputText id="y-input" styleClass="checkbox-values y-input" converterMessage="Введите число в указанном диапазоне." required="true"  requiredMessage="Обязательно введите значение Y" maxlength="6" type="" value="#{pointBean.y}"/>
-            </h:panelGroup>
+                        <ace:sliderEntry id="x" valueChangeListener="#{pointBean.printX}" value="#{pointBean.x}" styleClass="checkbox-values x" min="-4" max="4" stepPercent="12.5" length="170px" clickableRail="true" showLabels="true">
+                            <ace:ajax event="slideEnd" execute="@this" render="@form"/>
+                        </ace:sliderEntry>
 
-            <h:panelGroup styleClass="choose-values">
+                </h:panelGroup>
 
-                <h:outputLabel styleClass="line-title" value="Значение R:" />
+                <h:outputText styleClass="slider-value" value="#{pointBean.x}"/>
 
-                <h:panelGroup styleClass="checkbox-values r">
-                    <h:selectBooleanCheckbox id="r1" styleClass="" value="#{pointBean.r[0]}"/>
-                    <h:outputLabel for="r1" value="1"/>
 
-                    <h:selectBooleanCheckbox id="r2" styleClass="" value="#{pointBean.r[1]}"/>
-                    <h:outputLabel for="r2" value="2"/>
+                <h:panelGroup styleClass="choose-values">
+                    <h:outputLabel styleClass="line-title" value="Значение Y:" />
 
-                    <h:selectBooleanCheckbox id="r3" styleClass="" value="#{pointBean.r[2]}"/>
-                    <h:outputLabel for="r3" value="3"/>
+                    <h:inputText id="y" styleClass="checkbox-values y" converterMessage="Введите число в указанном диапазоне." required="true"  requiredMessage="Обязательно введите значение Y" maxlength="6" type="" value="#{pointBean.y}"/>
+                </h:panelGroup>
 
-                    <h:selectBooleanCheckbox id="r4" styleClass="" value="#{pointBean.r[3]}"/>
-                    <h:outputLabel for="r4" value="4"/>
 
-                    <h:selectBooleanCheckbox id="r5" styleClass="" value="#{pointBean.r[4]}"/>
-                    <h:outputLabel for="r5" value="5"/>
+                <h:panelGroup styleClass="choose-values">
+
+                    <h:outputLabel styleClass="line-title" value="Значение R:" />
+
+                    <h:panelGroup styleClass="checkbox-values r">
+                        <h:selectBooleanCheckbox id="r1" styleClass="" value="#{pointBean.r[0]}"/>
+                        <h:outputLabel for="r1" value="1"/>
+
+                        <h:selectBooleanCheckbox id="r2" styleClass="" value="#{pointBean.r[1]}"/>
+                        <h:outputLabel for="r2" value="2"/>
+
+                        <h:selectBooleanCheckbox id="r3" styleClass="" value="#{pointBean.r[2]}"/>
+                        <h:outputLabel for="r3" value="3"/>
+
+                        <h:selectBooleanCheckbox id="r4" styleClass="" value="#{pointBean.r[3]}"/>
+                        <h:outputLabel for="r4" value="4"/>
+
+                        <h:selectBooleanCheckbox id="r5" styleClass="" value="#{pointBean.r[4]}"/>
+                        <h:outputLabel for="r5" value="5"/>
+                    </h:panelGroup>
                 </h:panelGroup>
             </h:panelGroup>
 
-            <h:panelGroup>
-                    <h:commandButton styleClass="" value="Submit"
+            <h:panelGroup styleClass="buttons-block">
+                    <h:commandButton styleClass="button"
+                                     value="Проверить"
                                      type="submit"
                                      action="#{pointBean.handleSubmitForm}">
                     </h:commandButton>
 
-                    <h:commandButton styleClass=""
-                                     value="Clear form"
+                    <h:commandButton styleClass="button button-clear-form"
+                                     value="Очистить форму"
                                      type="button"/>
 
-                <h:commandButton styleClass=""
-                                 value="Clear table"
+                <h:commandButton styleClass="button"
+                                 value="Зачистить таблицу"
                                  type="button"
                                  action="#{pointBean.handleClearTable}">
                     <f:ajax render="results-table"/>
                 </h:commandButton>
             </h:panelGroup>
 
-        </h:panelGroup>
+            <section class="message-box">
+                <p class="message-box-content"></p>
+            </section>
 
+        </h:form>
+    </h:panelGroup>
 
-
-
+    <h:form styleClass="hidden-form">
+        <h:inputText styleClass="x-hidden" value="#{pointBean.x}"/>
+        <h:inputText styleClass="y-hidden" value="#{pointBean.y}"/>
+        <h:inputText styleClass="r-hidden" value="#{pointBean.r}"/>
+        <h:commandButton type="submit" action="#{pointBean.handleSubmitForm}"/>
     </h:form>
 
     <ui:include src="footer.xhtml"/>
+
+    <h:outputScript library="primefaces" name="jquery/jquery.js" target="head" />
+    <h:outputScript library="js" name="main_page.js"/>
 
 </h:body>
 </html>
