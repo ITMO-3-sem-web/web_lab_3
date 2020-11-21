@@ -46,30 +46,22 @@ $(document).ready(function(){
 
         resetForm();
 
-        // Handle submit-button clicked action to check the form inputs' values   .
-        // $("#submit-button").click(function() { // todo
-        //     clearAndHideMessage();
-        //     isValidData();
-        // });
+
+        $(".button-submit").on("click", (e) => {
+            main(e);
+        })
 
 
         // Handles form confirmation action to check the form inputs' values.
         $("#form").on("submit", function(e) { // todo
-
-            if ( !isValidData() ) {
-                e.preventDefault();
-                console.log("form prevented from submitting");
-
-            } else {
-                console.log("form submitted");
-            }
-
-            main();
-
+            main(e);
         });
+
 
         $(".button-clear-form").on("click", () => {
             resetForm();
+            $("#form").trigger("reset");
+
         })
 
 
@@ -77,8 +69,7 @@ $(document).ready(function(){
         $(".checkbox-values.r input").on('change', function() {
 
             r = parseInt( $(this).find("+ label").text() );
-            console.log("r = ")
-            console.log(r);
+            console.log("r = " + r)
 
             if ( ! $(this).is(" :checked") ) {
                 r = undefined;
@@ -86,12 +77,11 @@ $(document).ready(function(){
 
 
             if ( ! r ) { // The box is UNchecked
-                rIsChosen = false;
+
                 drawAll(0);
 
             } else {
-                rIsChosen = true;
-                console.log("*************** Redrawind canvas. _ R = " + r);
+                console.log("*************** Redrawing canvas. _ R = " + r);
                 drawAll(r);
 
             }
@@ -100,153 +90,95 @@ $(document).ready(function(){
 
         });
 
-        $(".slider-value").on("change", () => {
-            console.log("Slider Value changed")
-            x = getX();
-            console.log("x _= " + x)
-        })
+
+    }
 
 
-        // Handles the buttons for the "X" value
-        // $('.checkbox-values.x input').click( function () {
-        //     x = $(this).val();
-        //     $(this).css({color: "white", backgroundColor :  "cadetblue"});
-        //     $(this).siblings().css({color: "cadetblue", backgroundColor :  "transparent"});
-        //
-        // });
+    function main(e) {
 
+        if ( ! isValidData() ) {
+            e.preventDefault();
+            console.log("form prevented from submitting");
 
-        // Removes the positive message after the form started editing again.
-        $("form :input").change(function() {
-            if (messageContentIsPositive) {
-                clearAndHideMessage();
+            if ( ! validateR() ) {
+                $(".input-error-message.r-input-error-message").addClass('visible');
+                console.log("chooose r ");
             }
-        });
 
+        } else {
+            resetForm();
+            console.log("form submitted");
+        }
     }
 
 
     // Stets all the form's inputs the default (empty) values.
     function resetForm() {
 
-        $("#form").trigger("reset");
+
+        $(".input-error-message.r-input-error-message").removeClass('visible');
 
         x = undefined;
         y = undefined;
         r = undefined;
-        rIsChosen = false;
-
-        makeMessageNegative();
 
         drawAll(0);
 
+        // $("#form").trigger("reset");
     }
 
 
     // Makes request to PHP-server and handles it's response. If response if positive,
     // this function changes the table.
-    function main() {
+    // function main() {
+    //
+    //     // clearAndHideMessage();
+    //
+    //     if ( isValidData() ){
+    //
+    //         $(".x-hidden").val(x);
+    //         $(".y-hidden").val(y);
+    //         $(".r-hidden").val(r);
+    //         $(".hidden-form").submit();
+    //
+    //         resetForm();
+    //
+    //     }
+    // }
 
-        clearAndHideMessage();
 
-        if ( isValidData() ){
-
-            $(".x-hidden").val(x);
-            $(".y-hidden").val(y);
-            $(".r-hidden").val(r);
-            $(".hidden-form").submit();
-
-            resetForm();
-
-        }
-    }
-
-
-    function sendRequest(x, y, r) {
-
-        let request = "x=" + x + "&y=" + y + "&r=" + r; // todo
-
-        console.log("request= " + request);
-
-        window.location.href = '/web_lab_2-1.0/?' + request;
-
-    }
+    // function sendRequest(x, y, r) {
+    //
+    //     let request = "x=" + x + "&y=" + y + "&r=" + r; // todo
+    //
+    //     console.log("request= " + request);
+    //
+    //     window.location.href = '/web_lab_2-1.0/?' + request;
+    //
+    // }
 
 
     // Checks whether all the form's inputs have valid data (input).
     function isValidData() {
-
         return  (validateX() & validateY() & validateR()) ;
-
     }
 
 
     // Checks whether the 'X' value is valid and sets it to the global "X" if true.
     function validateX() {
-
-        let tmpX = getX();
-
-        console.log("x = " + x);
-        if (x === undefined) {
-            makeMessageNegative();
-            showAddMessage("Выберете значение X .<br>");
-            return false;
-
-        } else {
-            x = tmpX;
-            return true;
-        }
-
+        return true;
     }
 
 
     // Checks whether the 'Y' value is valid and sets it to the global "Y" if true.
     function validateY() {
-
-        let tmpY = getY().replace(",", ".");
-
-        console.log("y = " + y);
-
-        if ( ! $.isNumeric(tmpY)) {
-            console.log("y is NOT numeric")
-            makeMessageNegative();
-            showAddMessage("Введите значение Y в диапазоне от -3 до 3. В Качестве дробного разделителя используйте точку или запятую.<br>");
-            return false;
-        }
-
-
-        tmpY = parseFloat(tmpY);
-
-        if ( ( tmpY > -3) && ( tmpY < 3)  ) {
-            console.log("Y = " + y);
-            y = tmpY;
-            return true;
-
-        } else {
-            makeMessageNegative();
-            showAddMessage("Введите значение Y в диапазоне от -3 до 3. В Качестве дробного разделителя используйте точку или запятую.<br>");
-            return false;
-        }
+        return true;
     }
 
 
     // Checks whether the 'R' value is valid and sets it to the global "R" if true.
     function validateR() {
-
-        let tmpR = getR();
-
-        console.log("R = " + r);
-
-        if (tmpR === undefined) {
-            makeMessageNegative();
-            showAddMessage("Выберете значение R .<br>");
-            return false;
-
-        } else {
-            r = tmpR;
-            return true;
-        }
-
+        return rIsSet();
     }
 
 
@@ -295,62 +227,47 @@ $(document).ready(function(){
 
            canvas.addEventListener('click', function() { // todo
 
-               if ( rIsChosen ) {
-                   hideMessage();
-                   alert("canvas dots are sent");
-                   // sendRequest(xCoord,  yCoord, r);
+               if ( rIsSet() ) {
+                   // hideMessage();
+                   $(".input-error-message.r-input-error-message").removeClass('visible');
+                   $(".x-hidden").val(xCoord);
+                   $(".y-hidden").val(yCoord);
+                   $(".r-hidden").val( getR() );
+                   $(".button-submit-hidden").click();
+
+                   resetForm();
+                   console.log("canvas dots are sent");
                } else {
-                   showMessage("Выберете R перед тем как указать точку на графике.");
-                   alert("choose R ");
+                   $(".input-error-message.r-input-error-message").addClass('visible');
+                   console.log("chooose r ");
 
                }
 
            });
-
        }
-
-    }
-
-
-    // Returns true if a cursor leaves the canvas.
-    // Адекватно этот метод не захотел работать ( если курсор покидает канвас слишком быстро, то последняя фиксируемая его координата находится слишком далеко от границы)
-    function cursorLeavesCanvas(canvasX, canvasY) {
-
-        const delta = 3;
-
-        return (
-               ( (canvasX + delta) > canvasWidth )
-            || ( (canvasY + delta) > canvasHeight )
-
-            || ( (canvasX - delta) < 0 )
-            || ( (canvasY - delta) < 0 )
-        )
-
     }
 
 
     // Returns the "X" value taken from the "X" input.
     function getX() { // todo
-
-        // return $(".checkbox-values.x").val();
-
         return $(".slider-value").text();
     }
 
 
     // Returns the "Y" value taken from the "Y" input.
     function getY() {
-
         return $(".checkbox-values.y").val();
-
     }
 
 
     // Returns the "R" value taken from the "R" input.
     function getR() {
+        return $(".checkbox-values.r input:checked + label").text();
+    }
 
-        return r;
 
+    function rIsSet() {
+        return getR() !== "";
     }
 
 
@@ -498,7 +415,6 @@ $(document).ready(function(){
        }
 
 
-
        var pixelYCoord = maxYCoord * pixelStep + 4;
        for(let j=-maxYCoord; j <= maxYCoord; j += stepY) {
 
@@ -514,9 +430,7 @@ $(document).ready(function(){
            pixelYCoord -= pixelStep * stepY;
        }
 
-
        ctx.stroke();
-
     }
 
 
@@ -566,83 +480,11 @@ $(document).ready(function(){
                 "ans" : ans,
             });
         });
-
     }
 
 
     // Sets the specified coordinates to "X : " and "Y : " fields nearby canvas.
     function setCoordinatesView(x, y) {
         $(".coordinates-view .x").html(x);
-       $(".coordinates-view .y").html(y);
+        $(".coordinates-view .y").html(y);
     }
-
-
-    // Inserts 'text' below content in message-box.
-    function showAddMessage(text) {
-
-        let oldContent = $(".message-box .message-box-content").html();
-
-        if (oldContent.indexOf(text) === -1) {
-            showMessage(oldContent + text);
-        }
-
-    }
-
-
-    // Sets text to message-box and makes the last one visible.
-    function showMessage(text) {
-
-        messageBoxIsShown = true;
-        $(".message-box").css("display", "block");
-        $(".message-box .message-box-content").html(text);
-
-    }
-
-
-    // Hides the message-box.
-    function hideMessage() {
-        messageBoxIsShown = false;
-        $(".message-box").css("display", "none");
-    }
-
-
-    // Clears the content inside message-box and hides the last one.
-    function clearAndHideMessage() {
-        clearMessage();
-        hideMessage();
-    }
-
-
-    // Clears the message-box content.
-    function clearMessage() {
-
-        $(".message-box .message-box-content").html("");
-
-    }
-
-
-    // Changes message-box css to 'positive' style.
-    function makeMessagePositive() {
-
-        messageContentIsPositive = true;
-        $(".message-box").css("background-color", "rgba(115, 230, 0, .6)");
-        $(".message-box").css("border", "solid rgb(0, 179, 0)");
-
-    };
-
-
-    // Changes message-box css to 'negative' style.
-    function makeMessageNegative() {
-
-        messageContentIsPositive = false;
-        $(".message-box").css("background-color", "rgba(255, 77, 140, .6)");
-        $(".message-box").css("border", "solid rgb(255, 77, 140)");
-
-    }
-
-
-
-
-
-
-

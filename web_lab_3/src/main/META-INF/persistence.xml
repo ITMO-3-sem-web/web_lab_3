@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0"
+             xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+    <persistence-unit name="points">
+
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+
+        <class>ru.arina.maxim.model.Point</class>
+        <properties>
+            <property name="eclipselink.jdbc.driver" value="oracle.jdbc.driver.OracleDriver" />
+            <property name="eclipselink.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:orbis" />
+            <property name="eclipselink.jdbc.user" value="s284704" />
+            <property name="eclipselink.jdbc.password" value="hxy284" />
+
+            <!-- EclipseLink should create the database schema automatically -->
+
+            <property name="eclipselink.ddl-generation" value="drop-and-create-tables" />
+            <property name="eclipselink.ddl-generation.output-mode" value="database" />
+        </properties>
+
+    </persistence-unit>
+</persistence>

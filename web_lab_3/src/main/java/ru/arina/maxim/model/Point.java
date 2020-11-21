@@ -1,10 +1,16 @@
 package ru.arina.maxim.model;
 
+import lombok.*;
+
+import javax.persistence.*;
 import java.io.Serializable;
 
-//@Table(name="points")
-//@Entity
-//@ToString
+@Table(name="points")
+@Entity
+@NoArgsConstructor
+@Getter
+@Setter
+@ToString
 //@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class Point implements Serializable {
 
@@ -12,40 +18,47 @@ public class Point implements Serializable {
     public Point() {
     }
 
-    public Point(Double x, Double y, Double r) {
+    public Point(int x, Double y, int r) {
         this.x = x;
         this.y = y;
         this.r = r;
     }
 
 
-    public Point(Double x, Double y, Double r, boolean getsIntoArea) {
+    public Point(int x, Double y, int r, String result) {
         this(x, y, r);
-        this.getsIntoArea = getsIntoArea;
+        this.result = result;
     }
 
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
 
-//    @Column(nullable = false)
-    private Double x;
+    @Column(nullable = false)
+    private int x;
 
-//    @Column(nullable = false)
+    @Column(nullable = false)
     private Double y;
 
-//    @Column(nullable = false)
-    private Double r;
+    @Column(nullable = false)
+    private int r;
 
-//    @Column(nullable = false)
-    private boolean getsIntoArea;
+    @Column(nullable = false)
+    private String result;
 
+    public long getId() {
+        return id;
+    }
 
-    public Double getX() {
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public int getX() {
         return x;
     }
 
-    public void setX(Double x) {
+    public void setX(int x) {
         this.x = x;
     }
 
@@ -57,22 +70,20 @@ public class Point implements Serializable {
         this.y = y;
     }
 
-    public Double getR() {
+    public int getR() {
         return r;
     }
 
-    public void setR(Double r) {
+    public void setR(int r) {
         this.r = r;
     }
 
-    public boolean isGetsIntoArea() {
-        return getsIntoArea;
+    public String getResult() {
+        return result;
     }
 
-    public void setGetsIntoArea(boolean getsIntoArea) {
-        this.getsIntoArea = getsIntoArea;
+    public void setResult(String result) {
+        this.result = result;
     }
-
-
 }
 

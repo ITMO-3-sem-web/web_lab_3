@@ -7,10 +7,11 @@
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
           <factory-entry name="PointEntity" value="4df9eb0f-b366-4708-80d3-622075e5f372" />
-          <factory-entry name="web_lab_3" />
+          <factory-entry name="points" value="a6547161-a5d1-4116-be57-764c8ce31d83" />
+          <factory-entry name="web_lab_3" value="4df9eb0f-b366-4708-80d3-622075e5f372" />
         </datasource-mapping>
         <naming-strategy-map />
-        <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/META-INF/persistence.xml" />
       </configuration>
     </facet>
     <facet type="web" name="Web">
@@ -24,7 +25,7 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -34,6 +35,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="org.projectlombok:lombok-maven-plugin:1.16.4.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax:javaee-api:6.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.faces:jsf-api:2.1" level="project" />
     <orderEntry type="library" name="Maven: javax.faces:jsf-impl:1.2-20" level="project" />
@@ -41,5 +43,10 @@
     <orderEntry type="library" name="Maven: org.glassfish:javax.faces:2.3.5" level="project" />
     <orderEntry type="library" name="Maven: org.icefaces:icefaces-ace:4.3.0" level="project" />
     <orderEntry type="library" name="Maven: org.primefaces:primefaces:6.2" level="project" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.12" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.persistence:jakarta.persistence:2.2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.persistence:org.eclipse.persistence.asm:2.7.4" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.persistence:org.eclipse.persistence.core:2.7.4" level="project" />
+    <orderEntry type="library" name="org.eclipse.persistence:eclipselink:2.6.1" level="project" />
   </component>
 </module>

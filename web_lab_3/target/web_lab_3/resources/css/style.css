@@ -59,6 +59,7 @@ body {
 
 .y {
     width: 180px;
+    margin-right: 6px;
 }
 
 .checkbox-values label {
@@ -66,43 +67,21 @@ body {
     margin-left: 2px;
 }
 
-.message-box-note {
-/*    color: white;*/
-    
-    background-color: rgb(220,220,220);
-    border: solid rgba(220,220,220, .5);
-    border-radius: 5px;
-    /*    height: 60px;*/
-    width: 340px;
-        /*display: inline-block;*/
-    margin: 16px auto 0;
-    /*    color: white;*/
-    text-align: left;
-}
-
-
-.message-box {
-    background-color: rgba(255, 77, 140, .6);
-    border: solid rgb(255, 77, 140);
-    border-radius: 5px;
-/*    height: 60px;*/
-    width: 500px;
-/*    display: block;*/
-    margin: 16px auto 0;
-/*    color: white;*/
-    text-align: left;
-/*    display: inline-block;*/
+.input-error-message {
+    color: red;
     display: none;
+    margin-top: 8px;
+    margin-bottom: 6px;
 }
 
-.message-box-content {
-/*    vertical-align: middle;*/
-/*    display: inline-block;*/
-    word-wrap: break-word;
-    margin-left: 10px;
-    margin-right: 10px;
-
+.input-error-message.r-input-error-message.visible {
+    display: block;
 }
+
+.input-error-message.y-input-error-message.visible {
+    display: block;
+}
+
 
 .inputs-block {
     display: block;

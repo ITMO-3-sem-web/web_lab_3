@@ -27,26 +27,43 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3507a5f-3f3b-4f3f-8486-2c1e7a054f29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/header.css" afterDir="false" />
+    <list default="true" id="c3507a5f-3f3b-4f3f-8486-2c1e7a054f29" name="Default Changelist" comment="Js updated, canvas added to main_page.">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_jakarta_persistence_2_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_org_eclipse_persistence_asm_2_7_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_org_eclipse_persistence_core_2_7_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_eclipse_persistence_eclipselink_2_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_projectlombok_lombok_maven_plugin_1_16_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/arina/maxim/database/DBManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/arina/maxim/services/AreaChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/arina/maxim/validators/YInputValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_lab_3_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/web_lab_3_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4df9eb0f-b366-4708-80d3-622075e5f372.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4df9eb0f-b366-4708-80d3-622075e5f372.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4df9eb0f-b366-4708-80d3-622075e5f372/storage_v2/_src_/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4df9eb0f-b366-4708-80d3-622075e5f372/storage_v2/_src_/schema/PUBLIC.aaZQjQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4df9eb0f-b366-4708-80d3-622075e5f372/storage_v2/_src_/schema/S284704.ICElfw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4df9eb0f-b366-4708-80d3-622075e5f372/storage_v2/_src_/schema/S284704.ICElfw.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_faces_jsf_api_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_faces_jsf_api_2_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/arina/maxim/beans/PointBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/arina/maxim/beans/PointBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/arina/maxim/model/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/arina/maxim/model/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/main_page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/result.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/footer.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/footer.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/header.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/header.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/main_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/main_page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view/main_page.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/main_page.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/arina/maxim/beans/PointBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/arina/maxim/beans/PointBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/arina/maxim/model/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/arina/maxim/model/Point.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/web_lab_3.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/web_lab_3.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/web_lab_3/WEB-INF/classes/ru/arina/maxim/beans/PointBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/web_lab_3/WEB-INF/classes/ru/arina/maxim/beans/PointBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web_lab_3/WEB-INF/classes/ru/arina/maxim/model/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/web_lab_3/WEB-INF/classes/ru/arina/maxim/model/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web_lab_3/resources/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/web_lab_3/resources/css/footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/web_lab_3/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/web_lab_3/resources/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web_lab_3/resources/js/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web_lab_3/resources/js/result.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web_lab_3/view/footer.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/web_lab_3/view/footer.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web_lab_3/view/header.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/web_lab_3/view/header.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web_lab_3/resources/js/main_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/web_lab_3/resources/js/main_page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/web_lab_3/view/main_page.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/web_lab_3/view/main_page.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_lab_3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web_lab_3.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,8 +76,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="jsf" />
         <option value="CSS File" />
+        <option value="jsf" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -84,15 +102,21 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="oracle" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/resources/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/ru/arina/maxim/database" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4816092" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -101,6 +125,8 @@
       <recent name="ru.arina.maxim.beans" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspace\ITMO\Web\web_lab_3\web_lab_3\src\main\java\ru\arina\maxim\database" />
+      <recent name="D:\Workspace\ITMO\Web\web_lab_3\web_lab_3\src\main\java\ru\arina\maxim\services" />
       <recent name="D:\Workspace\ITMO\Web\web_lab_3\web_lab_3\src\main\webapp\resources\css" />
       <recent name="D:\Workspace\ITMO\Web\web_lab_3\web_lab_3\src\main\webapp\resources\js" />
       <recent name="D:\Workspace\ITMO\Web\web_lab_3\web_lab_3\src\main\webapp\resources\images" />
@@ -202,8 +228,18 @@
       <workItem from="1605785052767" duration="581000" />
       <workItem from="1605785643351" duration="3317000" />
       <workItem from="1605807328814" duration="8496000" />
-      <workItem from="1605889400851" duration="10665000" />
+      <workItem from="1605889400851" duration="10728000" />
+      <workItem from="1605947360549" duration="10463000" />
+      <workItem from="1605970034983" duration="20332000" />
     </task>
+    <task id="LOCAL-00001" summary="Js updated, canvas added to main_page.">
+      <created>1605903153776</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605903153776</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,73 +261,122 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="Js updated, canvas added to main_page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Js updated, canvas added to main_page." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="924" y="402" key="#Assign_Data_Sources" timestamp="1605785188950">
+    <state x="924" y="402" key="#Assign_Data_Sources" timestamp="1605994113642">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="924" y="402" key="#Assign_Data_Sources/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605785188950" />
-    <state x="505" y="131" key="#Project_Structure" timestamp="1605807352922">
+    <state x="924" y="402" key="#Assign_Data_Sources/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605994113642" />
+    <state x="505" y="131" key="#Project_Structure" timestamp="1605993085621">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="505" y="131" key="#Project_Structure/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605807352922" />
-    <state x="617" y="157" width="1089" height="955" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605810600042">
+    <state x="505" y="131" key="#Project_Structure/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605993085621" />
+    <state x="617" y="157" width="1089" height="955" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605993749400">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="617" y="157" width="1089" height="955" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605810600042" />
+    <state x="617" y="157" width="1089" height="955" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605993749400" />
+    <state x="779" y="346" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605993158361">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="779" y="346" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605993158361" />
+    <state x="830" y="260" key="#com.intellij.ide.util.MemberChooser" timestamp="1605994941429">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="830" y="260" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605994941429" />
     <state x="891" y="0" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1605785693946">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="891" y="0" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605785693946" />
+    <state x="524" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605990120065">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="524" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605990120065" />
     <state x="553" y="378" width="941" height="356" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog" timestamp="1605786202049">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="553" y="378" width="941" height="356" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605786202049" />
-    <state width="1382" height="299" key="GridCell.Tab.0.bottom" timestamp="1605817609846">
+    <state width="1382" height="299" key="GridCell.Tab.0.bottom" timestamp="1605994511431">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="1382" height="299" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605817609846" />
+    <state width="1382" height="299" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605994511431" />
     <state width="1024" height="212" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.0.1536.824@2560.0.1536.824" timestamp="1605790736566" />
-    <state width="1382" height="299" key="GridCell.Tab.0.center" timestamp="1605817609846">
+    <state width="1382" height="299" key="GridCell.Tab.0.center" timestamp="1605994511431">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="1382" height="299" key="GridCell.Tab.0.center/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605817609846" />
+    <state width="1382" height="299" key="GridCell.Tab.0.center/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605994511431" />
     <state width="1024" height="212" key="GridCell.Tab.0.center/0.0.2048.1112/2560.0.1536.824@2560.0.1536.824" timestamp="1605790736566" />
-    <state width="1382" height="299" key="GridCell.Tab.0.left" timestamp="1605817609846">
+    <state width="1382" height="299" key="GridCell.Tab.0.left" timestamp="1605994511431">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="1382" height="299" key="GridCell.Tab.0.left/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605817609846" />
+    <state width="1382" height="299" key="GridCell.Tab.0.left/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605994511431" />
     <state width="1024" height="212" key="GridCell.Tab.0.left/0.0.2048.1112/2560.0.1536.824@2560.0.1536.824" timestamp="1605790736565" />
-    <state width="1382" height="299" key="GridCell.Tab.0.right" timestamp="1605817609846">
+    <state width="1382" height="299" key="GridCell.Tab.0.right" timestamp="1605994511431">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="1382" height="299" key="GridCell.Tab.0.right/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605817609846" />
+    <state width="1382" height="299" key="GridCell.Tab.0.right/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605994511431" />
     <state width="1024" height="212" key="GridCell.Tab.0.right/0.0.2048.1112/2560.0.1536.824@2560.0.1536.824" timestamp="1605790736566" />
+    <state width="1382" height="299" key="GridCell.Tab.1.bottom" timestamp="1605978221152">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1382" height="299" key="GridCell.Tab.1.bottom/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605978221152" />
+    <state width="1382" height="299" key="GridCell.Tab.1.center" timestamp="1605978221151">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1382" height="299" key="GridCell.Tab.1.center/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605978221151" />
+    <state width="1382" height="299" key="GridCell.Tab.1.left" timestamp="1605978221151">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1382" height="299" key="GridCell.Tab.1.left/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605978221151" />
+    <state width="1382" height="299" key="GridCell.Tab.1.right" timestamp="1605978221151">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1382" height="299" key="GridCell.Tab.1.right/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605978221151" />
     <state width="189" height="539" key="HiddenNamespacesPopup" timestamp="1605785216613">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="189" height="539" key="HiddenNamespacesPopup/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605785216613" />
-    <state x="505" y="131" key="SettingsEditor" timestamp="1605808239911">
+    <state x="505" y="131" key="SettingsEditor" timestamp="1605993505013">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="505" y="131" key="SettingsEditor/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605808239911" />
+    <state x="505" y="131" key="SettingsEditor/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605993505013" />
     <state x="2854" y="115" key="SettingsEditor/0.0.2048.1112/2560.0.1536.824@2560.0.1536.824" timestamp="1605793274405" />
     <state width="246" height="198" key="ShowFilterAction_Filter_Popup" timestamp="1605792040824">
       <screen x="2560" y="0" width="1536" height="824" />
     </state>
     <state width="246" height="198" key="ShowFilterAction_Filter_Popup/0.0.2048.1112/2560.0.1536.824@2560.0.1536.824" timestamp="1605792040824" />
-    <state x="1223" y="170" width="618" height="781" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1605785496806">
+    <state x="904" y="406" width="307" height="299" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1605993847764">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="1223" y="170" width="618" height="781" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605785496806" />
-    <state x="681" y="259" key="run.anything.popup" timestamp="1605785854730">
+    <state x="904" y="406" width="307" height="299" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605993847764" />
+    <state x="622" y="194" width="618" height="781" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1605993929901">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="681" y="259" key="run.anything.popup/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605785854730" />
-    <state x="3001" y="183" width="672" height="503" key="search.everywhere.popup" timestamp="1605792059776">
-      <screen x="2560" y="0" width="1536" height="824" />
+    <state x="622" y="194" width="618" height="781" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605993929901" />
+    <state x="754" y="445" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1605993499619">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605789482990" />
+    <state x="754" y="445" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605993499619" />
+    <state x="681" y="259" width="672" height="677" key="run.anything.popup" timestamp="1605958299604">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="681" y="259" width="672" height="677" key="run.anything.popup/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605958299604" />
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1605951172030">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112/2560.0.1536.824@0.0.2048.1112" timestamp="1605951172030" />
     <state x="3001" y="183" width="672" height="503" key="search.everywhere.popup/0.0.2048.1112/2560.0.1536.824@2560.0.1536.824" timestamp="1605792059776" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/arina/maxim/validators/YInputValidator.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -19,6 +19,10 @@
           <element id="library" level="project" name="Maven: org.glassfish:javax.faces:2.3.5" />
           <element id="library" level="project" name="Maven: org.icefaces:icefaces-ace:4.3.0" />
           <element id="library" level="project" name="Maven: org.primefaces:primefaces:6.2" />
+          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.12" />
+          <element id="library" level="project" name="Maven: org.eclipse.persistence:jakarta.persistence:2.2.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.persistence:org.eclipse.persistence.asm:2.7.4" />
+          <element id="library" level="project" name="Maven: org.eclipse.persistence:org.eclipse.persistence.core:2.7.4" />
         </element>
       </element>
       <element id="directory" name="META-INF">
